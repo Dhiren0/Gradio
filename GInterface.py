@@ -4,6 +4,7 @@ def greet(name, intensity):
 demo = gr.Interface(
   fn=greet,
   inputs=["text", "slider"],
-  outputs="text",
+  outputs=["text"],
 )
-demo.launch(debug=True)
+demo.launch()
+
